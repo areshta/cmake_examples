@@ -4,23 +4,25 @@ cmake_minimum_required(VERSION 2.8)	 # Проверка версии CMake.
 
 message("lib_a make")
 
-add_library(lib_a STATIC .)
 
 set(SOURCE_LIB "${CMAKE_CXX_FLAGS} -std=c++11")
 
-message("${CMAKE_CXX_FLAGS}")
-
 include_directories(src)
 
-set(SOURCE_EXE src/private/main.cpp)		# Установка переменной со списком исходников для исполняемого файла
+file(GLOB LIB_SRC src/private/*.cpp)
 
-#add_library(foo STATIC ${SOURCE_LIB})	# Создание статической библиотеки с именем foo
+message("${LIB_SRC}")
 
-add_executable(main ${SOURCE_EXE})	# Создает исполняемый файл с именем main
+if(NOT DEFINED MY_LIBS_DIR)
+  set(MY_LIBS_DIR "libs")
+endif()
 
-#target_link_libraries(main foo)		# Линковка программы с библиотекой
+message("${MY_LIBS_DIR}")
+set(CMAKE_INSTALL_PREFIX "../../")
 
-install(TARGETS main DESTINATION bin)
+add_library(_a STATIC "${LIB_SRC}")
+
+install(TARGETS _a DESTINATION "${MY_LIBS_DIR}")
 
 
 
