@@ -5,24 +5,21 @@ cmake_minimum_required(VERSION 2.8)	 # Проверка версии CMake.
 message("lib_a make")
 
 
+
 set(SOURCE_LIB "${CMAKE_CXX_FLAGS} -std=c++11")
 
 include_directories(src)
 
 file(GLOB LIB_SRC src/private/*.cpp)
 
-message("${LIB_SRC}")
-
 if(NOT DEFINED MY_LIBS_DIR)
-  set(MY_LIBS_DIR "libs")
+   set(MY_LIBS_DIR "libs")
+   get_filename_component(MY_PROJ_DIR  "../../" ABSOLUTE)
+   set(CMAKE_INSTALL_PREFIX "${MY_PROJ_DIR}")
 endif()
-
-message("${MY_LIBS_DIR}")
-set(CMAKE_INSTALL_PREFIX "../../")
 
 add_library(_a STATIC "${LIB_SRC}")
 
-install(TARGETS _a DESTINATION "${MY_LIBS_DIR}")
 
 
 

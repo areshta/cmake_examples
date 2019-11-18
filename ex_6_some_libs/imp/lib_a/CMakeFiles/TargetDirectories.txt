@@ -1,7 +1,0 @@
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/install/strip.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/edit_cache.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/_a.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/rebuild_cache.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/list_install_components.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/install/local.dir
-/home/alex/cmake_examples/ex_6_some_libs/imp/lib_a/CMakeFiles/install.dir
