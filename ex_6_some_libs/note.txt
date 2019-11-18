@@ -1,0 +1,12 @@
+You could run building script from build folder
+
+main calls functions lib_a, lib_a call funtions lib_b
+
+common cmake settings are placed to config dir
+
+intermediate building files are places in tmp folder
+
+build result is placed to bin folder
+
+zbash - buuilding with bash script
+

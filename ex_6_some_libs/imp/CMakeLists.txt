@@ -9,6 +9,8 @@ message(${CMAKE_SOURCE_DIR})
 
 include(../config/config.cmake)
 
+add_subdirectory(lib_b)
+
 add_subdirectory(lib_a)
 
 add_subdirectory(app)
