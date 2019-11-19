@@ -1,0 +1,4 @@
+vesrion is set in the project cmake statement (pay attention to cmake version)
+
+then version.cpp file is generated from version.cpp.in file with replacing "@main_VERSION@" string (configure_file statement)
+default output place - building folder. so  I used ${CMAKE_CURRENT_SOURCE_DIR}/version.cpp 
