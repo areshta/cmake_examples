@@ -1,0 +1,7 @@
+used absolute path for generated file,
+as releative pathes are different for 
+add_custom_command(
+    OUTPUT ${MY_FOO_FPATH}   
+
+and 
+add_library(foo STATIC  ${MY_FOO_FPATH})	# Создание статической библиотеки с именем foo
