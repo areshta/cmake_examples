@@ -16,10 +16,10 @@ project(main CXX)			# Название проекта
 #execute_process(COMMAND "cppcheck ${MY_PROJ_DIR}/imp > ${MY_PROJ_DIR}/lint/result.txt")
 #execute_process(COMMAND "echo aaaaaaaaaaaaaaaaaaaaaaa")
 
-#execute_process(COMMAND "/bin/echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa > ${MY_PROJ_DIR}/tmp.txt" RESULT_VARIABLE CMD_ERROR )
-#  MESSAGE( STATUS "CMD_ERROR:" ${CMD_ERROR})
+execute_process(COMMAND /bin/echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa > ${MY_PROJ_DIR}/lint/report.txt OUTPUT_VARIABLE CMD_OUT RESULT_VARIABLE CMD_ERROR )
+MESSAGE( STATUS "CMD_ERROR:" ${CMD_ERROR})
 
-add_custom_target(ech ALL COMMAND /bin/echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+#add_custom_target(ech ALL COMMAND /bin/echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
 return()
 
