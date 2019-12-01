@@ -1,6 +1,0 @@
-/home/alex/cmake_examples/ex_3_subproj/tmp/CMakeFiles/rebuild_cache.dir
-/home/alex/cmake_examples/ex_3_subproj/tmp/CMakeFiles/main.dir
-/home/alex/cmake_examples/ex_3_subproj/tmp/CMakeFiles/edit_cache.dir
-/home/alex/cmake_examples/ex_3_subproj/tmp/foo/CMakeFiles/rebuild_cache.dir
-/home/alex/cmake_examples/ex_3_subproj/tmp/foo/CMakeFiles/foo.dir
-/home/alex/cmake_examples/ex_3_subproj/tmp/foo/CMakeFiles/edit_cache.dir

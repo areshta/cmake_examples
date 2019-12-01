@@ -1,4 +1,0 @@
-/home/alex/cmake_examples/ex2_lib/tmp/CMakeFiles/rebuild_cache.dir
-/home/alex/cmake_examples/ex2_lib/tmp/CMakeFiles/edit_cache.dir
-/home/alex/cmake_examples/ex2_lib/tmp/CMakeFiles/foo.dir
-/home/alex/cmake_examples/ex2_lib/tmp/CMakeFiles/main.dir
