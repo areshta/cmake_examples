@@ -9,11 +9,17 @@ include(../config/config.cmake)
 file(GLOB_RECURSE ALL_SOURCE_FILES *.cpp *.h)
 #message("${ALL_SOURCE_FILES}")
 
-add_custom_target(
-        cppcheck ALL
-        COMMAND ${MY_PROJ_DIR}/build/run_cppcheck.sh        
-        SOURCES ${ALL_SOURCE_FILES}
-)
+
+#add_custom_target(
+#        mycheck ALL
+#        COMMAND ${MY_PROJ_DIR}/build/run_cppcheck.sh        
+#        SOURCES ${ALL_SOURCE_FILES}
+#)
+
+
+
+
+#target_sources(mycheck PRIVATE ${ALL_SOURCE_FILES})
 
 
 #MESSAGE( STATUS "CMD_ERROR:" ${CMD_ERROR})
