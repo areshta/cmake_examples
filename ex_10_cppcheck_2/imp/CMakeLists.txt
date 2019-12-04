@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 2.8)	 # Проверка версии CMake.
 project(main CXX)			# Название проекта
 
 include(../config/config.cmake)
+include(../config/my_macro.cmake)
 
 file(GLOB_RECURSE ALL_SOURCE_FILES *.cpp *.h)
 #message("${ALL_SOURCE_FILES}")

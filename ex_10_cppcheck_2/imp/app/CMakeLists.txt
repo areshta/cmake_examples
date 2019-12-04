@@ -14,6 +14,8 @@ set(SOURCE_EXE src/private/main.cpp)		# Установка переменной 
 
 add_executable(main "${SOURCE_EXE}")	# Создает исполняемый файл с именем main
 
+mycheck(MYTRG main FILES "${MY_PROJ_DIR}/imp/app/${SOURCE_EXE}")
+
 target_link_libraries(main _a _b)		# Линковка программы с библиотекой
 
 install(TARGETS main DESTINATION bin)

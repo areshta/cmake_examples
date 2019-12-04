@@ -19,6 +19,8 @@ endif()
 
 add_library(_b STATIC "${LIB_SRC}")
 
+mycheck(MYTRG _b FILES ${LIB_SRC})
+
 
 
 

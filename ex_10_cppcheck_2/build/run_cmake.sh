@@ -5,6 +5,7 @@ SRC_DIR="${THIS_DIR}/../imp"
 PRJ_DIR="${THIS_DIR}/../"
 
 rm -r ../tmp #always clean build
+rm ../lint/*
 
 #cmake "${SRC_DIR}"  -DCMAKE_INSTALL_PREFIX="${PRJ_DIR}" -DCMAKE_VERBOSE_MAKEFILE="on" -B"${TMP_DIR}" --trace
 cmake "${SRC_DIR}"  -DCMAKE_INSTALL_PREFIX="${PRJ_DIR}" -DCMAKE_VERBOSE_MAKEFILE="on" -B"${TMP_DIR}"
