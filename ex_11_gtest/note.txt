@@ -1,0 +1,2 @@
+the solution was based on https://github.com/bast/gtest-demo
+todo: fix issue with ctest
